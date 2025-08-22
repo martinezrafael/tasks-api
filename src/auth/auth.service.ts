@@ -4,7 +4,6 @@ import * as bcrypt from "bcrypt";
 
 @Injectable()
 export class AuthService {
-  // Usuário “seed” em memória só para demo. Em produção, valide em DB.
   private seedUser = {
     email: process.env.SEED_USER_EMAIL || "admin@example.com",
     password: process.env.SEED_USER_PASSWORD || "admin123",
